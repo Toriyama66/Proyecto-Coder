@@ -1,0 +1,196 @@
+@import "../utilities/variable";
+@import "../layout/index";
+@import "../layout/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  background-color: $claro;
+}
+.logo {
+  max-width: 90px;
+}
+
+  .navbar{
+    background-color:$azulClaro;
+  
+
+  li a {
+    position: relative;
+    margin-left: 30px;
+    &:hover{ color: $principal;}
+  }
+
+  }
+
+//CATALOGO
+
+.card-title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.c1:hover {
+  transform: scale(1.2);
+  transition: all 0.4s;
+ 
+}
+
+//NOSOTROS
+
+.nosotros {
+  padding-left: 0;
+  height: 800px;
+}
+
+.info-nosotros {
+  color: $principal;
+margin-top: 40px;
+ 
+}
+
+.foto-nosotros {
+  padding-left: 0;
+ }
+
+.foto-nos{
+    height: 400px;
+   
+    justify-content: center;
+}
+.titulo-nosotros {
+  font-size: 40px;
+  font-weight: bolder;
+  
+}
+
+.texto-nosotros {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+//GALERIA
+
+.caja-galeria{
+    background-color: $azulOscuro;
+    height: 120px;
+
+    p{
+        color: $claro;
+        font-size: 1.5em;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    a{
+        color: $amarilloOscuro;
+        font-weight: bolder;
+    }
+
+}
+.imagen {
+  width: 100%;
+}
+
+.imagen:hover {
+  transform: scale(1.05);
+  transition: all 0.7s;
+}
+
+.imagen img {
+  width: 100%;
+}
+
+.galeria {
+    background-color: $verde;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+.caja-galeria{
+    background-color: $azulOscuro;
+    height: 120px;
+
+    p{
+        color: $claro;
+        font-size: 1em;
+        padding: 20px;
+        text-align: center;
+    }
+
+    
+}
+}
+
+@media (max-width: 320px){
+    
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+//FORMULARIO  
+.caja-formulario{
+    background-color: $azulOscuro;
+    height: 120px;
+
+    p{
+        color: $claro;
+        font-size: 1.5em;
+        padding: 20px;
+        text-align: center;
+    }
+
+    a{
+        color: $verde;
+        font-weight: bolder;
+    }
+}
+
+.container-formulario{
+    height: 600px;
+    background-color: $celeste;
+}
+.form-control{
+    color: $claro;
+
+}
+
+.form-group{
+    padding: 20px;
+    color: $claro;
+}
+
+.btn-primary{
+    color: $principal;
+    font-weight: bold;
+    background-color: $verde;
+    margin-top: 20px;
+    &:hover{
+        color: $principal;
+        background-color: $amarilloOscuro;
+    }
+
+    
+}
+
+.btn-reset{
+        &:hover{
+        color: $claro;
+        background-color: $rojo;
+    }
+    }
